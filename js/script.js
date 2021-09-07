@@ -8,6 +8,7 @@ for (var i = 0; i < menuItems.length; i++) {
 function buttonClick() {
     if (!this.classList.contains('menu-item--active')) {
         document.body.style.backgroundColor = `#${this.getAttribute('data-background')}`;
+        document.getElementById('colorHex').innerHTML = `#${this.getAttribute('data-background')}`;
     }
 }
 const colorTxt = document.getElementById('colortext');
