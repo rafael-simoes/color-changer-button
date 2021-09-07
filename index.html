@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,13 +8,20 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Color Changer Buttons</title>
 </head>
+
 <body>
+    <div class="">
+        <input id="colortext" onchange="textchange()" onkeyup="textchange()" onblur="textchange()" maxlength="6" value="" type="text"></div>
+    <div class=""> <button id="randomBtn">Random Color</button></div>
+    <div id="colorHex" class="colorHex"></div>
     <nav class="menu">
         <a href="#" class="menu-item menu-item--yellow" data-background="e4a924"></a>
         <a href="#" class="menu-item menu-item--red" data-background="c92142"></a>
         <a href="#" class="menu-item menu-item--green" data-background="37b983"></a>
         <a href="#" class="menu-item menu-item--purple" data-background="9f32b8"></a>
     </nav>
+
     <script src="js/script.js"></script>
 </body>
+
 </html>
