@@ -12,19 +12,34 @@
 <body>
     <div class="" style="text-align:center ;">
         <p style="font-size: 1.3rem; text-shadow: 2px 2px 0px #fff;">Custom Color</p>
-        <input id="colortext"
+       <div> <label for="hexColor">HEX </label><input id="hexColor"
             oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-            onchange="textchange()" onkeyup="textchange()" onblur="textchange()" maxlength="6" value=""
-            type="text" style="padding: 5px 5px;">
+            onchange="hexChange()" onkeyup="hexChange()" onblur="hexChange()" maxlength="6" value=""
+            type="text"></div>    
+
+           <div><label for="textR">R </label><input id="textR"
+            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+            onchange="RGBChange()" onkeyup="RGBChange()" onblur="RGBChange()" maxlength="3" value="255" min="0" max="255"
+            type="number" ></div>
+
+            <div><label for="textG">G </label><input id="textG"
+            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+            onchange="RGBChange()" onkeyup="RGBChange()" onblur="RGBChange()" maxlength="3" value="255" min="0" max="255"
+            type="number"></div>
+
+            <div><label for="textB">B </label><input id="textB"
+            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+            onchange="RGBChange()" onkeyup="RGBChange()" onblur="RGBChange()" maxlength="3" value="255" min="0" max="255"
+            type="number"></div>
     </div>
     <div class=""> <button id="randomBtn" class="glow-on-hover" type="button">Random Color</button></div>
-    <div class="colorHex"><div id="colorHex"></div><div id="colorRGB"></div></div>
-    <nav class="menu">
+    <div class="colorHex"><span>HEX - </span><span id="colorHex"></span><div><span> RGB - </span><span id="colorRGB"></span></div></div>
+    <!-- <nav class="menu">
         <a href="#" class="menu-item menu-item--yellow" data-background="e4a924"></a>
         <a href="#" class="menu-item menu-item--red" data-background="c92142"></a>
         <a href="#" class="menu-item menu-item--green" data-background="37b983"></a>
         <a href="#" class="menu-item menu-item--purple" data-background="9f32b8"></a>
-    </nav>
+    </nav> -->
 
     <script src="js/script.js"></script>
 </body>

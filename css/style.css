@@ -83,6 +83,17 @@ body {
     font-size: 1.5rem;
 }
 
+input[type="text"],
+input[type="number"] {
+    margin-bottom: 10px;
+    padding: 5px 5px;
+    width: 200px;
+    height: 20px;
+}
+input[type="text"]{margin-right: 20px;}
+
+label{min-width: 20px;
+margin-right: 20px;}
 
 .glow-on-hover {
     width: 100px;
@@ -103,7 +114,7 @@ body {
     background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
     position: absolute;
     top: -2px;
-    left:-2px;
+    left: -2px;
     background-size: 400%;
     z-index: -1;
     filter: blur(5px);
@@ -140,7 +151,15 @@ body {
 }
 
 @keyframes glowing {
-    0% { background-position: 0 0; }
-    50% { background-position: 400% 0; }
-    100% { background-position: 0 0; }
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
 }
