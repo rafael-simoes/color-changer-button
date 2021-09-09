@@ -11,23 +11,23 @@
 
 <body>
     <div class="" style="text-align:center ;">
-        <p style="font-size: 1.3rem; text-shadow: 2px 2px 0px #fff;">Custom Color</p>
-       <div> <label for="hexColor">HEX </label><input id="hexColor"
+        <p style="font-size: 1.3rem;" class="stroke">Custom Color</p>
+       <div> <label for="hexColor" class="stroke">HEX </label><input id="hexColor"
             oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
             onchange="hexChange()" onkeyup="hexChange()" onblur="hexChange()" maxlength="6" value=""
             type="text"></div>    
 
-           <div><label for="textR">R </label><input id="textR"
+           <div><label for="textR" class="stroke">R </label><input id="textR"
             oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
             onchange="RGBChange()" onkeyup="RGBChange()" onblur="RGBChange()" maxlength="3" value="255" min="0" max="255"
             type="number" ></div>
 
-            <div><label for="textG">G </label><input id="textG"
+            <div><label for="textG" class="stroke">G </label><input id="textG"
             oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
             onchange="RGBChange()" onkeyup="RGBChange()" onblur="RGBChange()" maxlength="3" value="255" min="0" max="255"
             type="number"></div>
 
-            <div><label for="textB">B </label><input id="textB"
+            <div><label for="textB" class="stroke">B </label><input id="textB"
             oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
             onchange="RGBChange()" onkeyup="RGBChange()" onblur="RGBChange()" maxlength="3" value="255" min="0" max="255"
             type="number"></div>
